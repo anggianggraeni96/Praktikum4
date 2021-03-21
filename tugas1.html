@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script> <!--sumber jquery-->
+        <script type="text/javascript">
+            $(document).ready(function(){ //function yang digunakan dalam file ini
+                $(".sembunyi").click(function() {$("#foto").hide("slow") }); //kelas sembunyi diklik akan menyembunyikan id foto
+                $(".tampil").click(function() {$("#foto").show("slow") }); //kelas tampil di klik akan menampilkan id foto
+                $(".sembunyii").click(function() {$("#fotoo").hide("slow") }); //kelas sembunyii diklik akan menyembunyikan id foto
+                $(".tampill").click(function() {$("#fotoo").show("slow") }); //kelas tampill di klik akan menampilkan id foto
+            });
+        </script>
+        <style type="text/css">
+            #foto{
+                width: 300px; height: 300px; /*Lebar 300px, Tinggi 300px*/
+            }
+            #fotoo{
+                width: 300px; height: 300px; /*Lebar 300px, Tinggi 300px*/
+            }
+        </style>
+    </head>
+    <body>
+        <button class="sembunyi">sembunyikan</button> <!--button sembunyikan dengan kelas sembunyi-->
+        <button class="tampil">tampilkan</button> <!--button tampilkan dengan kelas tampil-->
+        <button class="sembunyii">sembunyikan</button> <!--button sembunyikan dengan kelas sembunyii-->
+        <button class="tampill">tampilkan</button> <!--button tampilkan dengan kelas tampill-->
+        <p><img id="foto" src="me.jpg"></p> <!--menampilkan gambar dengan id foto-->
+        <p><img id="fotoo" src="mee.jpg"></p> <!--menampilkan gambar dengan id fotoo-->
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script> <!--sumber jquery-->
+        <script type="text/javascript">
+            $("document").ready(function(){ //function yang digunakan dalam file ini
+                $("#daftar").addClass("merahkuning"); //menambahkan kelas merahkuning pada daftar
+                $(".subdaftar").addClass("kuninghitam");}); //menambahkan kelas kuninghitam pada subdaftar
+        </script>
+        <style type="text/css">
+            .merahkuning{
+                color: red; font-weight: bold;  /*memberi warna merah dan huruf tebal*/
+                background-color: yellow; padding: 3px; /*memberi background kuning dan padding 3px*/
+            }
+            .kuninghitam{
+                color: blue; background-color: green; /*memberi warna biru dan backgroun hijau*/
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Paragraf Pertama</p> <!--Print : Paragraf Pertama-->
+        </div>
+        <div>
+            <ul id="daftar"> <!--Memiliki id daftar-->
+                <li>item 1</li> <!--Print : item 1-->
+                <li class="subdaftar">item 2</li> <!--Print : item 2; memiliki kelas subdaftar-->
+                <li>item 3</li> <!--Print : item 3-->
+            </ul>
+        </div>
+    </body>
+</html>

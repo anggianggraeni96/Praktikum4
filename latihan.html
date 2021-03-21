@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script> <!--Sumber jquery-->
+        <script type="text/javascript">
+            $(document).ready(function(){ //function yang digunakan dalam file ini
+                $(".sembunyi").click(function() {$("#foto").hide("slow") }); //kelas sembunyi diklik akan menyembunyikan id foto
+                $(".tampil").click(function() {$("#foto").show("slow") }); //kelas tampil di klik akan menampilkan id foto
+            });
+        </script>
+    </head>
+    <body>
+        <button class="sembunyi">sembunyikan</button> <!--button sembunyikan dengan kelas sembunyi-->
+        <button class="tampil">tampilkan</button> <!--button tampilkan dengan kelas tampil-->
+        <p><img id="foto" src="me.jpg"></p> <!--menampilkan gambar dengan id foto-->
+    </body>
+</html>

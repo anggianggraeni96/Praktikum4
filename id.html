@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script> <!--sumber jquery-->
+        <script type="text/javascript">
+            $("document").ready(function(){ //function yang digunakan dalam file ini
+                $("#daftar").addClass("merahkuning");}); //menambahkan kelas merahkuning pada daftar
+        </script>
+        <style type="text/css">
+            .merahkuning{
+                color: orange; font-weight: bold; /*memberi warna orange dan huruf tebal*/
+                background-color: green; padding: 3px; /*memberi background hijau dan padding 3px*/
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Paragraf Pertama</p> <!--Print : Paragraf Pertama-->
+        </div>
+        <div>
+            <ul id="daftar"> <!--Memiliki id daftar-->
+                <li>item 1</li> <!--Print : item 1-->
+                <li>item 2</li> <!--Print : item 2-->
+                <li>item 3</li> <!--Print : item 3-->
+            </ul>
+        </div>
+    </body>
+</html>

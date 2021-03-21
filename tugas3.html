@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script> <!--sumber jquery-->
+        <script type="text/javascript">
+            $("document").ready(function(){ //function yang digunakan dalam file ini
+                $(".out").click(function(){$("#kotak").fadeOut("slow")}); //Memberi efek fadeout pada kotak ketika kelas out di klik
+                $(".in").click(function(){$("#kotak").fadeIn("slow")}); //Memberi efek fadein pada kotak ketika kelas in di klik
+                $(".inn").click(function(){$("#kotak").fadeTo("slow", 0.3)}); //Memberi efek fadeto 0.3 pada kotak ketika kelas inn di klik
+            });
+        </script>
+        <style type="text/css">
+            #kotak{
+                width: 250px; height: 150px; /*Lebar 250px, Tinggi 150px*/
+                background: yellow; /*Background kuning*/
+                border: 1px solid black; padding: 5px; /*Border 1px warna hitam, padding 5px*/
+            }
+        </style>
+    </head>
+    <body>
+        <h3 id="kotak"></h3> <!--Menampilkan kotak-->
+        <button class="out">Fade Out</button> <!--Button yang memiliki kelas out-->
+        <button class="in">Fade In</button> <!--Button yang memiliki kelas in-->
+        <button class="inn">Fade to 0.3</button> <!--Button yang memiliki kelas inn-->
+    </body>
+</html>

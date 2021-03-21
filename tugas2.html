@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script> <!--sumber jquery-->
+        <script type="text/javascript">
+            $("document").ready(function(){ //function yang digunakan dalam file ini
+                $(".d").dblclick(function(){  //kelas d di double klik memiliki function
+                    $(".d").addClass("second");}); //menambahkan kelas second pada kelas d
+                $(".db").dblclick(function(){ //kelas db di double klik memiliki function
+                    $(".db").addClass("second");}); //menambahkan kelas second pada kelas db
+                $(".dbc").dblclick(function(){ //kelas dbc di double klik memiliki function
+                    $(".dbc").addClass("second");}); //menambahkan kelas second pada kelas dbc
+                $(".dbcc").dblclick(function(){ //kelas dbcc di double klik memiliki function
+                    $(".dbcc").addClass("second");}); //menambahkan kelas second pada kelas dbcc
+            });
+        </script>
+        <style type="text/css">
+            .d{
+                height: 75px; width: 75px; /*Tinggi 75px, Lebar75px*/
+                padding: 15px; background: lime; /*Padding 15px, Background Lime*/
+            }
+            .db{
+                height: 75px; width: 75px; /*Tinggi 75px, Lebar75px*/
+                padding: 15px; background: lime; /*Padding 15px, Background Lime*/
+            }
+            .dbc{
+                height: 75px; width: 75px; /*Tinggi 75px, Lebar75px*/
+                padding: 15px; background: lime; /*Padding 15px, Background Lime*/
+            }
+            .dbcc{
+                height: 75px; width: 75px; /*Tinggi 75px, Lebar75px*/
+                padding: 15px; background: lime; /*Padding 15px, Background Lime*/
+            }
+            .second{
+                background: red; /*Background Merah*/
+            }
+        </style>
+    </head>
+    <body>
+        <p>Klik 2 kali pada setia kotak untuk mengubah warnanya </p> <!--Print : Klik 2 kali pada setia kotak untuk mengubah warnanya-->
+        <button class="d"></button> <!--Button yang memiliki kelas d-->
+        <button class="db"></button> <!--Button yang memiliki kelas db-->
+        <button class="dbc"></button> <!--Button yang memiliki kelas dbc-->
+        <button class="dbcc"></button> <!--Button yang memiliki kelas dbcc-->
+    </body>
+</html>
